@@ -4,8 +4,9 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser")
 const { Schema } = mongoose;
 path = require('path');
-const http = require("http")
-const port = process.env.PORT || 5000
+const http = require("http") 
+const port = process.env.PORT;
+require('dotenv').config();
 
 app.use(bodyParser.urlencoded({extended: true}));
 
