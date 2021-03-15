@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>My Form page</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css">
+<style>
+    *,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+	font-size: 16px;
+	margin: 0;
+	background: rgba(244, 248, 248, 0.904);
+	min-height: 120vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.container{
+	max-width: 800px;
+	margin: 0 auto;
+	padding:35px;
+	border-radius: 15px;
+	background-color: white;
+}
+.row{
+	display: flex;
+	flex-flow: wrap;
+	margin: 0 -15px;
+}
+.column{
+	flex:0 0 100%;
+	padding: 0 25px;
+	border-color: black;
+	border-width: 45px;
+}
+.column.half{
+	flex:0 0 50%;
+}
+
+input,textarea{
+	width: 100%;
+	padding: 15px 20px;
+	margin: 0 0 30px;
+	font-family: arial;
+	background-color: #fbfbfb;
+	border-radius: 3px;
+	font-size: 16px;
+	border:1px solid #a1a1a1;
+}
+textarea{
+	height: 147px;
+	resize: none;
+}
+input[type="submit"]{
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	text-align: center;
+	cursor: pointer;
+	background-color: darkblue;
+	border:0;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h1 {
+  color: rgb(245, 126, 14);
+  text-align: center;
+  
+}
+
+.button {
+  background-color: #4CAF50;
+  border: 23px;
+  color: white;
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+	<div class="navbar">
+		<a href="Home.html">About time-management</a>
+		<a href="Whatdoido.html">What do I do</a>
+		<a href="Advice.html">Advice</a>
+		<a href="index.html">Feedback</a>
+		<a href="register.html">Register</a>
+
+	  </div>
+    
+
+  
+
+<br>
+<div class="container">
+	<h1>Have a question, or maybe you want to share your views?</h1>
+	<p class="p3">If my website has helped changing your attitude towards time-management, and are interested in any news, updates, and events, or perhaps you have a suggesting on how 
+		we can improve our service and make it more user-friendly?
+	</p>
+	<p> I value my customer's feedback feedback</p>
+	<p> Please complete the following form, and help me improve the customer experience.</p>
+	
+	<form  method="post"  action="/">
+		<div class="row">
+			<div class="column">
+				<input type="text" placeholder="Your First Name*"  name="title" oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+			</div>
+
+			<div class="column">
+				<input type="text" placeholder="Your Surname*"  name="Surname" oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="this.setCustomValidity('')">
+			</div>
+			
+			<div class="column">
+				<input type="text" placeholder="Address*"  name="Address" oninvalid="this.setCustomValidity('Please Enter Your address')" oninput="this.setCustomValidity('')">
+			</div>	
+
+
+
+
+			<div class="column half">
+				<input type="email" placeholder="Your Email*"  name="email"  oninvalid="this.setCustomValidity('Please Enter Your Email')" oninput="this.setCustomValidity('')">
+			</div>
+			
+			<div class="column">
+				<textarea placeholder="Message*"  name="comment" required oninvalid="this.setCustomValidity('Please Enter Your Message')" oninput="this.setCustomValidity('')"></textarea>
+			</div>
+			<div class="column">
+				<button class="button">Submit your feedback</button>
+			</div>
+		</div>
+	</form>
+</div>
+	
+
+
+
+</body>
+</html>
